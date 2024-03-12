@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <main class="container">
+
+<div class="container">
+    <div class="content">
         <h1>Lista de Tarefas</h1>
         <form id="taskForm">
             <input type="text" id="taskInput" placeholder="Adicionar nova tarefa..." required>
+            <textarea id="taskDescription" placeholder="Descrição da tarefa..."></textarea>
             <button type="submit">Adicionar</button>
         </form>
         <ul id="taskList">
             <!-- Lista de tarefas será inserida aqui -->
         </ul>
-    </main>
+    </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
