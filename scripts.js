@@ -1,15 +1,15 @@
 $(document).ready(function() {
     // Selecionando os elementos do DOM
-    const taskForm = $('#taskForm');
     const taskInput = $('#taskInput');
     const taskDescription = $('#taskDescription');
     const taskList = $('#taskList');
+    const taskForm = $('#taskForm');
 
     // Função para adicionar uma nova tarefa
     function addTask(description, taskDesc) {
-        // Criando um novo item de lista (li) com titulo e descricao
+        // Criando um novo item de lista com titulo e descricao
         const li = $('<li>').html(`<strong>${description}</strong><br>${taskDesc}`);
-        
+       
         // Adicionando um evento de clique ao item da lista para marcar status da tarefa
         li.click(function() {
             $(this).toggleClass('completed');
