@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="container">
+<main>
+    <div class="container">
     <div class="content">
         <h1>Lista de Tarefas</h1>
+ 
         <form id="taskForm">
             <input type="text" id="taskInput" placeholder="Adicionar nova tarefa..." required>
             <textarea id="taskDescription" placeholder="Descrição da tarefa..."></textarea>
@@ -19,8 +20,10 @@
         <ul id="taskList">
             <!-- Lista de tarefas será inserida aqui -->
         </ul>
+        </div>
+
     </div>
-</div>
+</main>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="scripts.js"></script>
